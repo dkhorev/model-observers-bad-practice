@@ -6,12 +6,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Sample
+class AvgTemperature
 {
     use HasFactory;
 
     protected $fillable = [
         'device_id',
-        'temp',
+        'avg_temp',
     ];
 }

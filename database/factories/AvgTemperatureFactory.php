@@ -7,15 +7,15 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Sample>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\AvgTemperature>
  */
-class SampleFactory extends Factory
+class AvgTemperatureFactory extends Factory
 {
     public function definition()
     {
         return [
             'device_id' => fake()->uuid(),
-            'temp'      => fake()->numberBetween(-10, 30),
+            'avg_temp'  => fake()->numberBetween(-10, 30),
         ];
     }
 }
