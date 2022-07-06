@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "dkhorev/model-observers-bad-practice",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "model-observers-bad-practice",
+    "keywords": ["php", "php patterns", "laravel patterns"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -36,6 +36,9 @@
         }
     },
     "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ],
         "lint": [
             "vendor/bin/phpcs --parallel=8"
         ],

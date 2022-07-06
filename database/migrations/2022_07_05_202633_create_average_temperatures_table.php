@@ -6,14 +6,13 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     public function up(): void
     {
         Schema::create('avg_temperatures', static function (Blueprint $table) {
             $table->id();
             $table->string('device_id');
-            $table->tinyInteger('avg_temp');
+            $table->float('temp');
             $table->timestamps();
         });
     }

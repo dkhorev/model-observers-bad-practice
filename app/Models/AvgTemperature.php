@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class AvgTemperature
+class AvgTemperature extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'device_id',
-        'avg_temp',
+        'temp',
     ];
 }
