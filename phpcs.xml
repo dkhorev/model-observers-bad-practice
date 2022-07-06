@@ -13,10 +13,7 @@
     <exclude-pattern>/storage/</exclude-pattern>
     <exclude-pattern>/node_modules/</exclude-pattern>
     <exclude-pattern>/scripts/</exclude-pattern>
-    <exclude-pattern>/ssr/</exclude-pattern>
     <exclude-pattern>/bootstrap/</exclude-pattern>
-    <exclude-pattern>/docker/</exclude-pattern>
-    <exclude-pattern>/public/</exclude-pattern>
 
     <rule ref="PSR12"/>
 
