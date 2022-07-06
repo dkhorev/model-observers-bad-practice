@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Events;
 
+use App\Models\RefactoredSample;
 use App\Models\Sample;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
@@ -15,7 +16,7 @@ class SampleCreatedEvent
     use InteractsWithSockets;
     use SerializesModels;
 
-    public function __construct(public Sample $sample)
+    public function __construct(public Sample|RefactoredSample $sample)
     {
     }
 }
