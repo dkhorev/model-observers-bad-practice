@@ -10,6 +10,9 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 
 class EventServiceProvider extends ServiceProvider
 {
+    /**
+     * @var array<string, array<string>>
+     */
     protected $listen = [
         SampleCreatedEvent::class => [
             RecalcAvgTemperatureListener::class,

@@ -20,6 +20,9 @@ class Sample extends Model
         'created_at',
     ];
 
+    /**
+     * @var array<string, string>
+     */
     protected $dispatchesEvents = [
         'created' => SampleCreatedEvent::class,
     ];

@@ -14,7 +14,6 @@ class RefactoredAvgTemperatureRecalcService
         $average = RefactoredSample::where('device_id', $sample->device_id)
             ->orderByDesc('created_at')
             ->limit(10)
-            ->get()
             ->avg('temp');
 
         AvgTemperature::updateOrCreate([
