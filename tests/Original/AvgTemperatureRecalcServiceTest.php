@@ -24,7 +24,7 @@ class AvgTemperatureRecalcServiceTest extends TestCase
         $sample = Sample::factory()->create(['device_id' => 'xyz', 'temp' => 11, 'created_at' => now()]);
 
         // pre assert
-        // this will FAIL because average was recounted 100x times when factory created samples
+        // this will FAIL because average was already recounted 100x times when factory was creating 100x samples
         $this->assertCount(0, AvgTemperature::all());
 
         // act
